@@ -1,0 +1,321 @@
+.containerCruds {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+    max-height: 105%;
+}
+
+/* CSS Form */
+
+.containerForm {
+    width: 35%;
+    height: 100%;
+    max-height: 100%;
+    background-color: var(--azul-intermediário);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.containerForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iconForms {
+    display: block;
+    margin: 0 auto 10px;
+    color: var(--branco);
+    height: 50px;
+    width: 50px;
+    max-height: 100%;
+}
+
+.formHeader h1 {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.formGroup label {
+    color: var(--branco);
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.formGroup input,
+.formGroup select {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.8em;
+    height: 30px;
+    outline: none;
+}
+
+.formDesc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formDesc label {
+    color: var(--branco);
+    margin-bottom: 5px;
+}
+
+.formDesc textarea {
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    height: 100px;
+    min-height: 50px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    resize: none;
+}
+
+.imagePreview {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.submitButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #006972;
+    color: var(--branco);
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+}
+
+.submitButton:hover {
+    background-color: #00373c;
+}
+
+/* CSS Lista */
+
+.containerList {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-color: var(--azul-intermediário);
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: large; 
+    scrollbar-color: var(--branco) var(--azul-intermediário);
+}
+
+.containerList h1 {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.listaList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.listaItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imageList {
+    max-width: 100px;
+}
+
+.imagePreview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.editButton,
+.deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.editButton {
+    color: #0056b3;
+}
+
+.deleteButton {
+    color: #d9534f;
+}
+
+/* CSS Atividades */
+
+.atividadeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    gap: 20px;
+    background-color: #f7f7f7;
+}
+
+.formGroupContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.atividadeForm {
+    background-color: var(--azul-intermediário);
+    border-radius: 10px;
+    padding: 25px;
+    color: var(--branco);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmButton,
+.cancelButton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 110px;
+}
+
+.confirmButton {
+    background-color: #14C55B;
+    color: var(--branco);
+    margin-right: 10px;
+}
+
+.confirmButton:hover {
+    background-color: #02973e;
+}
+
+.cancelButton {
+    background-color: #C92727;
+    color: var(--branco);
+}
+
+.cancelButton:hover {
+    background-color: #a10202;
+}
+
+
+.atividadeList {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-color: var(--azul-intermediário);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.atividadeList h1 {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+.atividadeItem {
+    background-color: #F1DBBC;
+    color: var(--preto);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.atividadeInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.atividadeInfo p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    flex: 1 1;
+    font-size: 0.9em;
+}
+
+.atividadeInfo button {
+    color: var(--branco);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.atividadeInfo .editarButton {
+    background-color: #0022AC;
+}
+
+.atividadeInfo .editarButton:hover {
+    background-color: #001051;
+}
+
+.atividadeInfo .toggleButton {
+    background-color: var(--azul-intermediário);
+}
+
+
+.atividadeInfo .toggleButton:hover {
+    background-color: #00373c;
+}
+
+.atividadeDescricao {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #333;
+}

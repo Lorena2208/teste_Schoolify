@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+.tela_login {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  
+  align-items: center;
+}
+
+.tela_login .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tela_login .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+
+  max-width: 40%;
+}
+
+.tela_login .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tela_login .logo h3 {
+  width: 100%;
+}
+
+.tela_login .logo p {
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 16px;
+  width: 100%;
+}
+
+.tela_login .container_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 32%;
+  height: 98vh;
+
+  padding: 40px;
+  margin: 7px;
+
+  background-color: #F5F5F5;
+  border-radius: 25px;
+}
+
+.container_login h2 {
+  text-align: center;
+
+  font-size: 2.5rem;
+  font-family: Rowdies, sans-serif;
+  font-weight: 700;
+
+  color: var(--azul-intermediário);
+
+  margin-bottom: 120px;
+}
+
+.container_login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container_login form .form_group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container_login form .form_group label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--azul-intermediário);
+}
+
+.container_login form .form_group input {
+  font-size: 18px;
+
+  width: 100%;
+
+  height: 50px;
+  padding: 10px;
+  border: solid 1px rgba(29, 29, 29, 0.5);
+  border-radius: 5px;
+  background-color: var(--branco);
+
+  outline: none;
+}
+
+.password_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password_wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password_wrapper .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(29, 29, 29, 0.7);
+}
+
+.password_wrapper .icon:hover {
+  color: rgba(29, 29, 29, 1);
+}
+
+.link_Recuperar {
+  margin-top: 5px;
+  
+  text-align: right;
+  width: 100%;
+}
+
+.link_Recuperar a {
+  font-size: 14px;
+  color: var(--azul-intermediário);
+  
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link_Recuperar a:hover {
+  text-decoration: underline;
+}
+
+.botao_login {
+  width: 100%;
+  max-width: 200px;
+  height: 45px;
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao_login:hover {
+  background-color: rgba(0, 144, 157, 0.877);
+}
+
+/* CSS RECUPAR SENHA */
+
+.recuperar_senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 20px;
+}
+
+.recuperar_senha img {
+  height: 100px;
+}
+
+.recuperar_senha h2 {
+  font-size: 24px;
+  color: var(--preto);
+
+  margin-bottom: 50px;
+}
+
+.recuperar_senha p {
+  font-size: 16px;
+  text-align: justify;
+  
+  width: 100%;
+  color: var(--preto);
+}
+
+.recuperar_senha .linha {
+  width: 100%;
+  height: 2px;
+
+  margin: 20px 0;
+
+  background-color: var(--cinza);
+  
+}
+
+.botao_recuperar {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+
+  border: none;
+  border-radius: 25px;
+
+  font-size: 20px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao_recuperar:hover {
+  background-color: rgba(0, 144, 157, 0.877);
+}
+
+.botao_voltar {
+  font-size: 14px;
+  padding: 5px;
+
+  margin-top: 50px;
+  
+  width: 100%;
+  max-width: 120px;
+  height: 20%;
+
+  background-color: rgba(0, 105, 114, 1);
+  color: var(--branco);
+
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 12px;
+  color: var(--preto);
+
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  transform: translateX(-50%);
+}
+
+.footer a {
+  color: rgba(0, 34, 172, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS - Termos de Uso e Politica de Privacidade  */
+
+.containerTermos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100vw;
+  height: 100%;
+
+  padding: 20px;
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.containerTermos .termosHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.termosHeader h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.termosHeader .botao_voltarTermos {
+  height: 40px;
+  width: 80px;
+
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.termosConteudo {
+  width: 100%;
+  max-width: 800px;
+
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.containerTermos .h2 {
+  margin-bottom: 20px;
+}
+
+.containerTermos .strong {
+  font-weight: bold;
+}
+
+.termosConteudo p {
+  margin-bottom: 20px;
+}

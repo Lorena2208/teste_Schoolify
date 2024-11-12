@@ -1,0 +1,238 @@
+.containerComponentes{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerCalendario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 60%;
+    height: 100%;
+
+    border-radius: 15px;
+
+    background-color: var(--azul-intermediário);
+
+}
+
+.containerCalendario h1{
+    font-size: 1.8rem;
+    padding: 22px 0px 18px 0px;
+    color: var(--branco);
+}
+
+.containerEventosRegistrados{
+    background-color: var(--azul-intermediário);
+    color: var(--branco);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 32%;
+    height: 100%;
+
+    border-radius: 15px;
+}
+
+.containerEventosRegistrados h2{
+    font-size: 1.8rem;
+
+    text-align: center;
+
+    padding: 22px 0px 18px 0px;
+}
+
+.containerEventosRegistrados .mensagemEvento{
+  text-align: center;
+}
+
+
+/* Eventos Registrados */
+  
+  .listaEventos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardEvento {
+    display: flex;
+    
+    align-items: center;
+
+    width: 80%;
+
+    padding: 15px;
+
+    background: rgba(0, 105, 114, 0.5);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+  }
+  
+  .cardEvento:hover {
+    transform: scale(1.05);
+  }
+
+  .textosCardEvento{
+    padding-left: 15px;
+  }
+  
+  .cardEvento img {
+    width: 20%;
+    height: auto;
+
+    border-radius: 100%;
+  }
+  
+  .cardEvento span {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--branco);
+
+    margin-bottom: 5px;
+
+    text-align: center;
+  }
+  
+  .cardEvento p {
+    font-size: 14px;
+
+    color: var(--branco);
+  }
+  
+  /* Estilos do pop-up */
+
+  .popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(2px);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+  }
+  
+  .popUpContent {
+    position: relative;
+
+    background-color: var(--azul-intermediário);
+
+    padding: 20px;
+
+    width: 400px;
+    max-width: 90%;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .headerPopUp{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .popUpContent img {
+    width: 20%;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 3%;
+
+  } 
+  
+  .popUpContent h3 {
+    font-size: 22px;
+
+    color: var(--branco);
+  } 
+
+  .popUpContent p {
+    font-size: 16px;
+
+    color: var(--branco);
+
+    margin-bottom: 5px;
+  }
+    
+  .closeButton {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background: none;
+
+    border: none;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: var(--branco);
+  }
+  
+  /* Evento Hoje */
+
+  .eventoHoje{
+    background: rgba(0, 105, 114, 0.5);
+    color: var(--branco);
+
+    width: 80%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    border-radius: 15px; 
+}
+
+.cardEventoHoje{
+  display: flex;
+  align-items: center;
+}
+
+.cardEventoHoje img{
+  width: 8%;
+  height: auto;
+
+  border-radius: 100%;
+}
+
+.cardEventoHoje span{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cardEventoHoje p{
+  font-size: 13px;
+
+  color: var(--branco);
+}
+
+

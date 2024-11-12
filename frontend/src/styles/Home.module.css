@@ -1,0 +1,333 @@
+.containerTela {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  gap: 30px;
+}
+
+/* CSS - Saudação + Atividades recentes */
+
+.acontainerAtv {
+  width: 30%;
+  height: 100%;
+  
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+  border-radius: 15px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.saudacao h2 {
+  font-size: 1.8rem;
+
+}
+
+.saudacao .nome {
+  font-weight: 300;
+}
+
+.saudacao p {
+  font-size: 0.7rem;
+}
+
+/* CSS - Atividades recentes */
+
+.atividadesRecentes {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.atividadesRecentes h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.atividadesRecentes .card {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  
+  width: 100%;
+  height: 100px;
+
+  margin-bottom: 15px;
+  padding: 15px;
+
+  background-color: rgba(0, 104, 114, 0.568);
+  border-radius: 5px;
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+}
+
+.atividadesRecentes .card .imgCard {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.cardsContainer .cardContent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  white-space: nowrap;
+  
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.atividadesRecentes .card .botaoAtv {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  width: 90px;
+
+  height: fit-content;
+  padding: 5px;
+
+  font-size: 0.5rem;
+  font-weight: 600;
+
+  background-color: rgba(241, 219, 188, 1);
+  color: var(--preto);
+  border: none;
+  
+  border: 2px solid rgba(0, 105, 114, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* CSS - Container direita + proximos eventos e sugestoes de livros */
+
+.containersDireita {
+  width: 70%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 30px;
+}
+
+/* CSS - Proximos Eventos */
+
+.proximosEventos {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 50%;
+  padding: 20px;
+
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+  
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  
+}
+
+.conteudoEventos {
+  display: flex;
+  
+  width: 100%;
+  height: 100%;
+  
+  justify-content: space-between;
+}
+
+.calendario {
+  width: 50%;
+  height: 100%;
+
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.cardsCalendario {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+
+  /* align-items: center; */
+  justify-content: flex-start;
+  padding: 10px;
+  height: 100%;
+}
+
+.cardsCalendario .card {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  
+  width: 100%;
+  height: 100px;
+
+  margin-bottom: 15px;
+  padding: 20px;
+
+  background-color: rgba(0, 104, 114, 0.568);
+  border-radius: 5px;
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+}
+
+.cardsCalendario .card .imgCard {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.cardsCalendario .cardContent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.proximosEventos .card .botaoAtv {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 90px;
+
+  height: fit-content;
+  padding: 5px;
+
+  font-size: 0.6rem;
+  font-weight: 500;
+
+  background-color: rgba(241, 219, 188, 1);
+  color: var(--preto);
+  border: none;
+  
+  border: 2px solid rgba(0, 105, 114, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+/* CSS - SUGESTOES DE LVIROS */
+
+.sugestoesLivros {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 20px;
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sugestoesLivros {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.titulo {
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.titulo h2 {
+  font-size: 1.2rem;
+
+}
+
+.titulo p {
+  font-size: 0.8rem;
+
+}
+
+.exibirLivro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  gap: 30px;
+}
+
+.livro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: fit-content;
+  min-height: fit-content;
+
+  gap: 5px;
+}
+
+.livro img {
+  width: 100%;
+  height: 8rem;
+
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.livro span {
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao_livro {
+  width: 70px;
+  height: 18px;
+  font-size: 0.6rem;
+  font-weight: 600;
+
+  background-color: rgba(0, 105, 114, 0.5);
+  color: var(--branco);
+
+  border: none;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+

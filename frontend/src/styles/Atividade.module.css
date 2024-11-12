@@ -1,0 +1,284 @@
+.livroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  
+  padding: 50px;
+
+  background-color: var(--azul-intermediário);
+  border-radius: 15px;
+
+  color: var(--branco);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.livroContainer h1 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+
+  border-bottom: 3px solid var(--azul-escuro);
+}
+
+.livro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.capaLivro {
+  width: 10rem;
+  height: 14rem;
+
+  margin: 20px;
+  
+  background-color: var(--azul-escuro);
+
+  display: flex;
+
+  border-radius: 5px;
+  
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.capaLivro:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.capaLivro .linha {
+  height: 100%;
+  padding: 2px;
+  margin-left: 7px;
+  
+  background-color: rgb(0, 73, 80);
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10px;
+  margin-top: 40px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo img {
+  width: 100%;
+  height: 28%;
+  
+  border-radius: 5px;
+
+  margin-bottom: 25px;
+}
+
+.conteudo h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+
+
+
+/* CSS - Atividade Aberta */
+
+.Container_Atividade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--branco);
+
+  width: 100%;
+  height: 600px;	
+
+  margin: 0 auto;
+
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--azul-intermediário);
+}
+
+.conteudo_atv h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.AtvAberta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+
+  width: 850px;
+
+  height: 400px;
+
+  border: 10px solid var(--azul-escuro);
+  border-radius: 15px;
+
+  background-color: rgba(241, 219, 188, 1);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.AtvAberta h2 {
+  font-size: 20px;
+  width: 100%;
+
+  text-align: center;
+  color: var(--preto);
+
+  margin-bottom: 10px;
+
+  border-bottom: rgba(148, 142, 134, 1) solid 2px;
+}
+
+.AtvAberta p {
+  font-size: 16px;
+  width: 100%;
+  
+  margin-bottom: 5px;
+  text-align: justify;
+  color: var(--preto);
+  
+}
+
+.AtvAberta .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  width: 100%;
+  height: 100%;
+}
+
+.seta_esquerda, .seta_direita {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--branco);
+  background-color: var(--azul-escuro);
+  
+  border-radius: 50%;
+  border: none;
+  /* padding: 5px; */
+
+  width: 20px;
+  height: 20px;
+  
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.voltar {
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+
+  border: none;
+  
+  padding: 5px 20px;
+  font-size: 16px;
+  
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seta_esquerda:disabled, .seta_direita:disabled {
+
+  cursor: not-allowed;
+}
+
+.seta_esquerda.disabled, .seta_direita.disabled {
+  opacity: 0.5;
+  background-color: var(--preto);
+  cursor: not-allowed;
+  color: var(--branco); 
+}
+
+
+/* COMENTÁRIOS - ATIVIDADE ABERTA */
+
+.containerComentario{
+  margin-top: 2%;
+
+  width: 100%;
+  height: 25vh;
+  /* height: 100%; */
+
+  background-color: var(--azul-intermediário);
+  color: var(--branco);
+
+  border-radius: 15px;
+
+}
+
+.containerComentario h2{
+  text-align: center;
+
+  padding: 20px 0px 15px 0px;
+}
+
+
+.containerForm .containerComentario{
+  width: 100%;
+  height: 50%;
+
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.containerForm textarea{
+  width: 85%;
+  height: 6vh;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  font-size: 15px;
+
+  padding: 10px 10px;
+  
+}
+
+.botaoComentario{
+  width: 5%;
+  height: 6vh;
+
+  border: none;
+
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+
+  font-size: 15px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.botaoComentario:hover{
+  background-color: var(--azul-claro);
+}

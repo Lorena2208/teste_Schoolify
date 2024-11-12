@@ -1,0 +1,403 @@
+.containerConfig {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.containerConfig .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 3px solid var(--azul-escuro);
+  background-color: var(--azul-intermediário);
+
+  border-radius: 15px 0 0 15px;
+
+  width: 60%;
+  height: 100%;
+}
+
+/* CSS - SUBMENU CONFIG */
+
+.containerConfig .contentMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+  height: 100%;
+
+  padding: 35px;
+
+  background-color: var(--branco);
+
+  border-radius: 0 15px 15px 0;
+}
+
+.containerConfig .subMenuConf {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.subMenuConf h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--preto);
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+   
+}
+
+.subMenu ul {
+  font-size: 1.2rem;
+  
+  color: var(--azul-intermediário);
+  
+  list-style: none;
+}
+
+.subMenu li {
+  padding: 25px;
+  
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--cinza);
+}
+
+.subMenu li:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.subMenu .icon {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.subMenu .sair {
+  color: rgba(209, 35, 35, 1);
+}
+
+.subMenu .sair:hover {
+  background-color: rgba(209, 35, 35, 1);
+  color: var(--branco);
+}
+
+/* CSS - Modal  */
+
+.modalOverlay {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.276);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modalContent {
+  background: rgba(245, 245, 245, 0.943);
+
+  border-radius: 8px;
+  padding: 20px;
+
+  max-width: 300px;
+  width: 90%;
+  min-height: 150px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.modalContent h2 {
+  font-size: 1.3rem;
+  color: rgba(64, 61, 61, 1);
+  text-align: center;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.cancelButton, .confirmButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  margin-left: 10px;
+  background-color: transparent;
+  
+  cursor: pointer;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+  width: 100%;
+}
+
+.cancelButton {
+
+  color: rgba(209, 35, 35, 1);
+}
+
+.confirmButton {
+  border-right: 2px solid var(--cinza);
+  color: var(--azul-intermediário);
+}
+
+
+/* CSS - Perfil  */
+
+.containerPerfil {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px;
+
+  color: var(--branco);
+}
+
+.containerPerfil .profileIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100px;
+  width: 100px;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.containerPerfil hr {
+  width: 100%;
+  height: 1px;
+
+  margin: 20px 0;
+  background-color: rgba(64, 61, 61, 0.4);
+  
+  border: none;
+}
+
+.containerPerfil h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  text-align: center;
+  
+  margin: 10px 0;
+}
+
+.containerPerfil h3 {
+  font-size: 1.2rem;
+  
+  margin: 15px 0;
+}
+
+.containerPerfil p {
+  font-size: 1.1rem;
+
+  margin: 5px 0;
+}
+
+
+.containerPerfil .icon {
+  height: 22px;
+  margin-right: 10px;
+}
+
+
+/* CSS - Alterar Senha  */
+
+.containerAlterarSenha {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  color: var(--branco);
+  padding: 50px;
+}
+
+.containerAlterarSenha h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  
+  width: 100%;
+}
+
+.containerAlterarSenha .formAlterarSenha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  
+  gap: 15px;
+}
+
+.formAlterarSenha label {
+  font-size: 1.1rem;
+}
+
+.containerAlterarSenha .form_group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.formAlterarSenha .form_group input {
+  width: 100%;
+  height: 40px;
+  
+  padding: 0 10px;
+  border-radius: 5px;
+
+  border: none;
+  outline: none;
+
+  font-size: 1rem;
+}
+
+.containerAlterarSenha .botaoAlterarSenha {
+  margin-top: 20px;
+
+  width: 150px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+}
+
+.containerAlterarSenha .botaoAlterarSenha:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%; 
+}
+
+.togglePasswordVisibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+
+  color: rgba(183, 180, 180, 1);
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.errorMensage {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  
+  padding: 5px;
+
+  /* width: 350px; */
+  text-align: center;
+
+  color: rgba(209, 35, 35, 1);
+  background-color: var(--cinza);
+
+  border-radius: 10px;
+}
+
+
+
+/* CSS - Termos de Uso e Política de Privacidade  */
+
+.containerConfig .containerTermos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 50px;
+
+  color: var(--branco);
+  overflow: auto;
+}
+
+.containerConfig .containerTermos::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.containerConfig .containerTermos::-webkit-scrollbar-thumb {
+  background: var(--branco);
+  border-radius: 10px;
+}
+
+.containerTermos h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.containerTermos p {
+  font-size: 1rem;
+  line-height: 1.5;
+
+  margin: 10px 0;
+  text-align: justify;
+}
